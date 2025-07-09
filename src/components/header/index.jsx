@@ -5,7 +5,8 @@ import StorefrontIcon from "@mui/icons-material/Storefront";
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-// import useStateValue from './hooks/useStateValue';
+
+
 
   const Header = ({ setSearchTerm }) => {
   // const handleSearch = (e) => {
@@ -32,7 +33,7 @@ import { useState } from "react";
         <div className="header_logo">
           <StorefrontIcon className="header_img" />
           <h1 className="header_title">
-            Dessert.<span>ng</span>
+            D<span style={{fontSize:"20px"}}>essert</span>.<span style={{fontSize:"15px"}}>ng</span>
           </h1>
         </div>
       </Link>
@@ -53,7 +54,7 @@ import { useState } from "react";
       <div className="header_nav">
         <Link to="/review" style={{textDecoration: "none"}}>
           <div className="nav_item">
-            <button className="nav_item1">Leave A
+            <button className="nav_item1 ">Leave A
               Review</button>
           </div>
         </Link>

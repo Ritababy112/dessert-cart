@@ -1,13 +1,23 @@
 import React from "react";
 import "./Styles.css";
+import CartImage from '../../assets/images/illustration-empty-cart.svg'
+
+
+
+
 const Cart = ({ cart,  removeItem, confirmOrder }) => {
+
+
   const total = cart.reduce((acc, item) => acc + item.qty * item.price, 0);
 
   return (
     <aside className="cart">
       <h3>Your Cart ({cart.length})</h3>
       {cart.length === 0 ? (
-        <p>Your cart is empty</p>
+      <div style={{display: "grid", placeItems: "center"}}>
+        <img src={CartImage} alt="" />
+          <p>Your cart is empty</p>
+      </div>
       ) : (
         <>
         <ul>

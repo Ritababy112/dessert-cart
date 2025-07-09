@@ -22,7 +22,7 @@ const Home = ({ cart, addToCart, updateQty, removeItem, showModal, confirmOrder,
       {/* Show cart */}
       <Cart
         cart={cart}
-        updateQty={updateQty}
+  
         removeItem={removeItem}
         confirmOrder={confirmOrder}
       />
